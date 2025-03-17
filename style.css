@@ -1,0 +1,359 @@
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .testimonial-section {
+        position: relative;
+        height: 400px; /* Fixed height for the section */
+        overflow: hidden;
+    }
+    
+    .testimonial-container {
+        display: flex;
+        width: max-content;
+        padding: 20px 0;
+        /* Remove transition for smoother scrolling control */
+    }
+    
+    .testimonial-card {
+        width: 500px;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+    
+    .scroll-indicator {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0,0,0,0.1);
+        height: 4px;
+        width: 100px;
+        border-radius: 2px;
+    }
+    
+    .scroll-progress {
+        height: 100%;
+        width: 0%;
+        background-color: #007bff;
+        border-radius: 2px;
+        transition: width 0.1s linear;
+    }
+    
+    .scroll-message {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    :root {
+        --primary-color: #2d3e50;
+        --secondary-color: #1abc9c;
+        --text-color: #333;
+        --light-bg: #f8f9fa;
+        --dark-bg: #1a1a1a;
+        --dark-text: #f5f5f5;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--text-color);
+        scroll-behavior: smooth;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .dark-mode {
+        background-color: var(--dark-bg);
+        color: var(--dark-text);
+    }
+    
+    .dark-mode .card, 
+    .dark-mode .navbar,
+    .dark-mode .accordion-item {
+        background-color: #2a2a2a;
+        color: var(--dark-text);
+        border-color: #444;
+    }
+    
+    .dark-mode .form-control,
+    .dark-mode .form-select {
+        background-color: #333;
+        color: var(--dark-text);
+        border-color: #444;
+    }
+    
+    .dark-mode .navbar-nav .nav-link {
+        color: var(--dark-text);
+    }
+    
+    header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&h=900&q=80')  center/cover no-repeat;
+        color: white;
+    }
+    .profile-img{
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        position: relative;
+        border: 4px solid;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #1bbc9b;
+    }
+    .profile-round-circle{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        border-radius: 0 !important;
+        zoom: 129%;
+    }
+    .section-padding {
+        padding: 100px 0;
+    }
+    
+    .navbar {
+        padding: 20px 0;
+        transition: all 0.3s;
+    }
+    
+    .navbar.scrolled {
+        background-color: var(--primary-color) !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+    }
+    
+    .btn-primary {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+    
+    .btn-primary:hover {
+        background-color: #16a085;
+        border-color: #16a085;
+    }
+    
+    .skill-progress {
+        height: 10px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+    
+    .project-card {
+        transition: transform 0.3s;
+        margin-bottom: 30px;
+        height: 100%;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        color: white;
+        margin-right: 10px;
+        transition: all 0.3s;
+    }
+    
+    .social-icons a:hover {
+        background-color: var(--secondary-color);
+        transform: scale(1.1);
+    }
+    
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 30px 0;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .service-card {
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s;
+        height: 100%;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: var(--secondary-color);
+    }
+    
+    .blog-card {
+        margin-bottom: 30px;
+        transition: transform 0.3s;
+        height: 100%;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .blog-date {
+        font-size: 14px;
+        color: #777;
+    }
+    
+    #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index: 1000;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    .testimonial-section {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+    }
+    
+    .testimonial-container {
+        display: flex;
+        transition: transform 0.3s ease-out;
+        width: max-content;
+        padding: 20px 0;
+    }
+    
+    .testimonial-card {
+        width: 500px;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+    
+    .animated {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .animated.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* Add this to your existing styles */
+    .section-padding {
+        padding: 80px 0;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            text-align: center;
+        }
+        
+        .section-padding {
+            padding: 60px 0;
+        }
+    }
+    
+    .progress-container {
+        margin-bottom: 30px;
+    }
+    
+    .badge-tech {
+        background-color: var(--secondary-color);
+        color: white;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+    
+    .dark-mode .badge-tech {
+        background-color: #444;
+    }
+    
+    .contact-info-item {
+        margin-bottom: 20px;
+    }
+    
+    .contact-info-item i {
+        font-size: 24px;
+        margin-right: 15px;
+        color: var(--secondary-color);
+    }
+    
+    .timeline {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: var(--secondary-color);
+    }
+    
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -45px;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+    }
+    
+    .timeline-date {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+    }
+    
+    .animated {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s;
+    }
+    
+    .animated.show {
+        opacity: 1;
+        transform: translateY(0);
+    }

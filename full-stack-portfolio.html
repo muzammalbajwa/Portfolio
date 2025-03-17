@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full-Stack Developer Portfolio - Showcasing web development projects, skills, and services">
+    <meta name="keywords" content="web developer, full-stack developer, JavaScript, React, PHP, Laravel, portfolio">
+    <title>M. Muzammal | Full-Stack Developer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">M. Muzammal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" hidden class="btn btn-sm btn-outline-light ms-2">
+                            <!-- <i class="fas fa-moon"></i> -->
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <header id="home" class="text-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="profile-img mb-4">
+                        <img src="https://lh3.googleusercontent.com/d/1SQelTjVnAFEON-TWh4h2l9niGkydSmZr=w500" alt="M. Muzammal" class="rounded-circle profile-round-circle img-fluid">
+                    </div>
+                    <h1 class="display-4 fw-bold mb-3 animated">M. Muzammal</h1>
+                    <h2 class="fw-light mb-4 animated">Full-Stack Developer</h2>
+                    <p class="lead mb-4 animated">I create professional and scalable web applications using modern technologies</p>
+                    <div class="d-flex justify-content-center gap-3 mb-5 animated">
+                        <a href="#contact" class="btn btn-primary px-4 py-2">Hire Me</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1oljFF1iDglAcywI8surECnXzOgyH3_bi" class="btn btn-outline-light px-4 py-2">Download CV</a>
+                    </div>
+                    <div class="social-icons animated">
+                        <a href="https://github.com/muzammalbajwa"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muzammaldev/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/923051469202?text=Hello%20Muzammal,%20I%20need%20a%20website%20for%20my%20business"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">About Me</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 animated">
+                    <h3 class="mb-4">Who I Am</h3>
+                    <p>I'm a passionate Full-Stack Developer with over 5 years of experience in building responsive and user-friendly web applications. My expertise spans across front-end and back-end technologies, allowing me to create complete web solutions from concept to deployment.</p>
+                    <p>I enjoy tackling complex problems and finding elegant solutions. My approach to development focuses on creating clean, maintainable code that provides an exceptional user experience while meeting business objectives.</p>
+                    <p>When I'm not coding, I enjoy contributing to open-source projects, writing technical articles, and staying updated with the latest industry trends.</p>
+                    
+                    <div class="mt-4">
+                        <h3 class="mb-3">Personal Attributes</h3>
+                        <ul>
+                            <li>Strong problem-solving abilities</li>
+                            <li>Excellent communication skills</li>
+                            <li>Detail-oriented with a focus on quality</li>
+                            <li>Adaptable to new technologies</li>
+                            <li>Team player with leadership capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 animated">
+                    <h3 class="mb-4">Technical Skills</h3>
+                    
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>PHP/Laravel</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>MySQL/PostgreSQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Node.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress skill-progress">
+                            <div class="progress-bar bg-success" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Additional Skills</h4>
+                        <div class="mt-3">
+                            <span class="badge bg-secondary badge-tech">Git / GitLab / Bitbucket</span>
+                            <span class="badge bg-secondary badge-tech">Bootstrap</span>
+                            <span class="badge bg-secondary badge-tech">Tailwind CSS</span>
+                            <span class="badge bg-secondary badge-tech">jQuery</span>
+                            <span class="badge bg-secondary badge-tech">Third Party APIs</span>
+                            <span class="badge bg-secondary badge-tech">Figma</span>
+                            <span class="badge bg-secondary badge-tech">Vue.js</span>
+                            <span class="badge bg-secondary badge-tech">API Integration & Development</span>
+                            <span class="badge bg-secondary badge-tech">Payment Integration (Stripe , Dojo)</span>
+                            <span class="badge bg-secondary badge-tech">Responsive Design</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container" id="testimonialSection">
+                <!-- Testimonials Section -->
+                <div class="row mt-5 mb-4">
+                    <div class="col-md-12">
+                        <h3 class="text-center">What People Say</h3>
+                        <hr class="w-25 mx-auto mb-5">
+                    </div>
+                </div>
+            
+                <div class="testimonial-section">
+                    <div class="testimonial-container" id="testimonialContainer">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left me-2 text-muted"></i>Muzammal is an outstanding developer who transformed our outdated system into a modern, scalable platform. His ability to optimize performance and implement clean architecture was impressive.<i class="fas fa-quote-right ms-2 text-muted"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80" alt="Client" class="rounded-circle me-3" width="50">
+                                    <div>
+                                        <h5 class="mb-0">Sarah Johnson</h5>
+                                        <p class="mb-0 text-muted">CEO, TechRetail</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left me-2 text-muted"></i>Working with Muzammal was a fantastic experience. He took our concept and built a fully functional SaaS platform, ensuring seamless user experience and robust backend infrastructure.<i class="fas fa-quote-right ms-2 text-muted"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80" alt="Client" class="rounded-circle me-3" width="50">
+                                    <div>
+                                        <h5 class="mb-0">Michael Brown</h5>
+                                        <p class="mb-0 text-muted">Project Manager, InnovateX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left me-2 text-muted"></i>From the start, Muzammal understood our vision and delivered an intuitive e-commerce solution that boosted our online sales by 50%. His attention to UI/UX made a huge difference.<i class="fas fa-quote-right ms-2 text-muted"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80" alt="Client" class="rounded-circle me-3" width="50">
+                                    <div>
+                                        <h5 class="mb-0">Emily Davis</h5>
+                                        <p class="mb-0 text-muted">Founder, StartupLabs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text"><i class="fas fa-quote-left me-2 text-muted"></i>Muzammal's technical expertise and problem-solving skills helped us scale our business with a custom-built web application. His communication and dedication were outstanding.<i class="fas fa-quote-right ms-2 text-muted"></i></p>
+                                <div class="d-flex align-items-center mt-3">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&h=50&q=80" alt="Client" class="rounded-circle me-3" width="50">
+                                    <div>
+                                        <h5 class="mb-0">David Wilson</h5>
+                                        <p class="mb-0 text-muted">CTO, Enterprise Solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="scroll-indicator">
+                        <div class="scroll-progress" id="scrollProgress"></div>
+                    </div>
+            
+                    <div class="scroll-message" id="scrollMessage">Scroll to view more testimonials</div>
+                </div>
+            </div>             
+           
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <!-- <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">My Projects</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 animated">
+                    <div class="card project-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c" class="card-img-top" alt="E-commerce Platform">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Platform</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 animated">
+                    <div class="card project-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4" class="card-img-top" alt="Task Management App">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Management App</h5>
+                            <p class="card-text">A collaborative task management application with real-time updates, user roles, and progress tracking.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-tech">Vue.js</span>
+                                <span class="badge badge-tech">Node.js</span>
+                                <span class="badge badge-tech">Socket.io</span>
+                                <span class="badge badge-tech">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 animated">
+                    <div class="card project-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa" class="card-img-top" alt="Real Estate Portal">
+                        <div class="card-body">
+                            <h5 class="card-title">Real Estate Portal</h5>
+                            <p class="card-text">A comprehensive real estate listing platform with property search, filtering, and agent management.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-tech">PHP</span>
+                                <span class="badge badge-tech">Laravel</span>
+                                <span class="badge badge-tech">PostgreSQL</span>
+                                <span class="badge badge-tech">Google Maps API</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">Work Experience</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline animated">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Present</div>
+                            <h4>Full Stack Developer</h4>
+                            <h5>Upwork Freelancer</h5>
+                            <p>Collaborated with clients worldwide to deliver custom web applications. Specialized in PHP, Laravel, MySQL, JavaScript, and HTML/CSS, transforming complex requirements into efficient solutions.</p>
+                            <p>Key achievements:</p>
+                            <ul>
+                                <li>Completed over 120 projects with a 98.5% client satisfaction rate.</li>
+                                <li>Developed e-commerce platforms, content management systems, and custom APIs.</li>
+                                <li>Consistently met project deadlines while maintaining high-quality code standards.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Present</div>
+                            <h4>Back End Programmer</h4>
+                            <h5>Blue Horn Technologies</h5>
+                            <p>Specialize in crafting custom web applications that enhance user experiences and drive business efficiency. Lead development of backend systems using PHP and Laravel, ensuring robust and scalable solutions.</p>
+                            <p>Key achievements:</p>
+                            <ul>
+                                <li>Developed and maintained complex applications with frameworks like Flutter and Laravel.</li>
+                                <li>Designed and implemented RESTful APIs for seamless integration with front-end services.</li>
+                                <li>Optimized database queries, resulting in a 30% improvement in application performance.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - 2024</div>
+                            <h4>PHP Programmer</h4>
+                            <h5>Aan Tourism</h5>
+                            <p>Led the design and development of innovative SaaS platforms for the retail sector, signing up 18,000 shops and handling over a million products and invoices. Focused on building efficient applications that drive business growth.</p>
+                            <p>Key achievements:</p>
+                            <ul>
+                                <li>Developed a comprehensive inventory management system adopted by thousands of retailers.</li>
+                                <li>Implemented microservices architecture to enhance system scalability and maintainability.</li>
+                                <li>Achieved a 25% increase in user engagement through improved application performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Certifications -->
+            <div class="row mt-5">
+                <div class="col-md-12 text-center mb-4">
+                    <h3>Certifications</h3>
+                    <hr class="w-25 mx-auto mb-4">
+                </div>
+                
+                <div class="col-md-6 mb-4 animated">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate mb-3" style="font-size: 40px; color: var(--secondary-color);"></i>
+                            <h5 class="card-title">Full-Stack Web Development</h5>
+                            <p class="card-text">Udacity Nanodegree</p>
+                            <p class="text-muted">Issued: 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4 animated">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-certificate mb-3" style="font-size: 40px; color: var(--secondary-color);"></i>
+                            <h5 class="card-title">PHP Laravel Expert</h5>
+                            <p class="card-text">Laravel Certification Program</p>
+                            <p class="text-muted">Issued: 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">Services I Offer</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4 animated">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h4 class="mb-3">Web Development</h4>
+                            <p>Custom responsive websites and web applications tailored to your business needs, with clean code and modern technologies.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Responsive Design</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Cross-Browser Compatibility</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Performance Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 animated">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="mb-3">Backend Development</h4>
+                            <p>Robust and secure server-side applications with database design, API development, and authentication systems.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>RESTful API Development</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Database Optimization</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Authentication & Authorization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 animated">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="mb-3">E-commerce Solutions</h4>
+                            <p>Custom e-commerce platforms with payment integration, inventory management, and user-friendly shopping experiences.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Payment Gateway Integration</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Inventory Management</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Customer Account Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4 animated">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h4 class="mb-3">API Development</h4>
+                            <p>Custom API development for integrating applications and services, with comprehensive documentation and secure authentication.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>RESTful Architecture</li>
+                                <li><i class="fas fa-check text-success me-2"></i>JSON Web Tokens</li>
+                                <li><i class="fas fa-check text-success me-2"></i>API Documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 animated">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h4 class="mb-3">Code Review & Optimization</h4>
+                            <p>Thorough code review and performance optimization to improve application speed, security, and maintainability.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>Performance Analysis</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Security Auditing</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Refactoring Recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 animated">
+                    <div class="card service-card shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4 class="mb-3">DevOps Services</h4>
+                            <p>Setup and maintenance of CI/CD pipelines, Docker containers, and deployment strategies for seamless development workflows.</p>
+                            <ul class="list-unstyled mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i>CI/CD Implementation</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Docker Containerization</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Server Configuration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <!-- <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">Latest Blog Posts</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 animated">
+                    <div class="card blog-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250&q=80" class="card-img-top" alt="React Blog Post">
+                        <div class="card-body">
+                            <div class="blog-date mb-2">March 15, 2023</div>
+                            <h5 class="card-title">How to Build Scalable React Applications</h5>
+                            <p class="card-text">Learn the best practices for creating maintainable and scalable React applications with modern architecture patterns.</p>
+                            <div class="mt-3">
+                                <span class="badge badge-tech">React.js</span>
+                                <span class="badge badge-tech">Architecture</span>
+                                <span class="badge badge-tech">Performance</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 animated">
+                    <div class="card blog-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1592424002053-21f369ad7fdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250&q=80" class="card-img-top" alt="Laravel Blog Post">
+                        <div class="card-body">
+                            <div class="blog-date mb-2">February 28, 2023</div>
+                            <h5 class="card-title">Ultimate Guide to Laravel 10 Features</h5>
+                            <p class="card-text">Explore the new features and improvements in Laravel 10 and how they can enhance your backend development workflow.</p>
+                            <div class="mt-3">
+                                <span class="badge badge-tech">Laravel</span>
+                                <span class="badge badge-tech">PHP</span>
+                                <span class="badge badge-tech">Backend</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 animated">
+                    <div class="card blog-card shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250&q=80" class="card-img-top" alt="DevOps Blog Post">
+                        <div class="card-body">
+                            <div class="blog-date mb-2">January 20, 2023</div>
+                            <h5 class="card-title">10 DevOps Practices Every Developer Should Know</h5>
+                            <p class="card-text">Discover essential DevOps practices that can streamline your development process and improve collaboration.</p>
+                            <div class="mt-3">
+                                <span class="badge badge-tech">DevOps</span>
+                                <span class="badge badge-tech">CI/CD</span>
+                                <span class="badge badge-tech">Docker</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary mt-3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 text-center mt-5 animated">
+                    <a href="#" class="btn btn-outline-primary">View All Posts</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">Frequently Asked Questions</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto animated">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is your development process?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    My development process typically includes requirement gathering, planning, design, development, testing, deployment, and maintenance. I use agile methodologies to ensure frequent communication and iterative development, allowing for flexibility and adjustments throughout the project.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How do you handle project timelines and deadlines?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I manage project timelines using project management tools and breaking down projects into smaller, manageable tasks. I provide regular updates on progress and communicate proactively if any challenges arise that might affect deadlines. I always build in buffer time for unexpected issues to ensure on-time delivery.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you provide ongoing maintenance after project completion?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, I offer ongoing maintenance and support packages to ensure your application continues to run smoothly after launch. This includes bug fixes, security updates, and minor feature additions. We can discuss your specific maintenance needs and create a customized plan.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What is your pricing structure?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    My pricing is based on project scope, complexity, and timeline. I offer both fixed-price quotes for well-defined projects and hourly rates for ongoing work. After understanding your requirements, I'll provide a detailed proposal with transparent pricing. I also offer flexible payment schedules for larger projects.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How do you ensure website security?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    I implement security best practices throughout the development process, including secure authentication systems, data encryption, input validation, and protection against common vulnerabilities like SQL injection and XSS attacks. I also keep all software and dependencies updated and perform regular security audits.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h2 class="fw-bold">Get In Touch</h2>
+                    <hr class="w-25 mx-auto">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0 animated">
+                    <h3 class="mb-4">Contact Information</h3>
+                    
+                    <div class="contact-info-item d-flex align-items-center">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h5 class="mb-0">Email</h5>
+                            <p class="mb-0">muzammalbajwa56@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item d-flex align-items-center">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h5 class="mb-0">Phone</h5>
+                            <p class="mb-0">+92 305 1469202</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item d-flex align-items-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h5 class="mb-0">Location</h5>
+                            <p class="mb-0">Lahore, Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons mt-3">
+                            <a href="https://github.com/muzammalbajwa"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/muzammaldev/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/923051469202?text=Hello%20Muzammal,%20I%20need%20a%20website%20for%20my%20business"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h4>Availability</h4>
+                        <p>Currently available for freelance projects and full-time opportunities.</p>
+                        <p><i class="fas fa-clock me-2"></i>Response time: Within 24 hours</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 animated">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Send a Message</h3>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center animated">
+                    <h3>Subscribe to My Newsletter</h3>
+                    <p class="mb-4">Get updates on my latest projects, tutorials, and tech insights.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="mb-4">M. Muzammal</h4>
+                    <p>Full-Stack Developer specializing in creating modern and responsive web applications with clean code and exceptional user experiences.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://github.com/muzammalbajwa"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muzammaldev/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/923051469202?text=Hello%20Muzammal,%20I%20need%20a%20website%20for%20my%20business"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-4 mt-md-0"></div>
+                <div class="col-md-4 mt-4 mt-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <!-- <li><a href="#projects" class="text-white">Projects</a></li> -->
+                        <li><a href="#services" class="text-white">Services</a></li>
+                        <!-- <li><a href="#blog" class="text-white">Blog</a></li> -->
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-3 mt-4 mt-md-0">
+                    <h5 class="mb-3">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-white">Sitemap</a></li>
+                    </ul>
+                </div> -->
+            </div>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Muzammal. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a id="back-to-top" href="#" class="btn btn-primary btn-sm rounded-circle">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- JavaScript Libraries -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <script src="portfolio.js"></script>
+</body>
+</html>

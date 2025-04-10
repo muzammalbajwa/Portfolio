@@ -148,3 +148,66 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('resize', () => ScrollTrigger.refresh());
     }
 });
+// Project filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if filter buttons exist
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Get filter value
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Filter projects
+                const projectItems = document.querySelectorAll('.project-item');
+                projectItems.forEach(item => {
+                    // Show all items if 'all' is selected
+                    if (filterValue === 'all') {
+                        item.classList.add('show');
+                        item.classList.remove('hide');
+                    } else {
+                        // Check if item has the category
+                        const categories = item.getAttribute('data-category').split(' ');
+                        if (categories.includes(filterValue)) {
+                            item.classList.add('show');
+                            item.classList.remove('hide');
+                        } else {
+                            item.classList.add('hide');
+                            item.classList.remove('show');
+                        }
+                    }
+                });
+            });
+        });
+    }
+    
+    // Initialize animations for project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.querySelector('.project-overlay').style.opacity = '1';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.querySelector('.project-overlay').style.opacity = '0';
+        });
+    });
+});
+
+// Update navigation to include Projects
+document.addEventListener('DOMContentLoaded', function() {
+    // Find the commented out projects nav item and uncomment it
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        const link = item.querySelector('.nav-link');
+        if (link && link.getAttribute('href') === '#projects') {
+            item.style.display = 'block';
+        }
+    });
+});

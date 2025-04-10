@@ -271,7 +271,7 @@
     </section>
     
     <!-- Projects Section -->
-    <!-- <section id="projects" class="section-padding bg-light">
+    <section id="projects" class="section-padding bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center mb-5">
@@ -280,58 +280,177 @@
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-md-4 animated">
+            <!-- Project Filter Buttons -->
+            <div class="row mb-4">
+                <div class="col-md-12 text-center">
+                    <div class="project-filters">
+                        <button class="btn btn-sm filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm filter-btn" data-filter="web">Web Development</button>
+                        <button class="btn btn-sm filter-btn" data-filter="ecommerce">E-commerce</button>
+                        <button class="btn btn-sm filter-btn" data-filter="api">API</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row project-container">
+                <!-- Project 1 -->
+                <div class="col-md-4 mb-4 project-item animated" data-category="web ecommerce">
                     <div class="card project-card shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c" class="card-img-top" alt="E-commerce Platform">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="E-commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="card-text">A complete online shopping solution with product catalog, shopping cart, and payment processing.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-secondary badge-tech">React.js</span>
+                                <span class="badge bg-secondary badge-tech">Laravel</span>
+                                <span class="badge bg-secondary badge-tech">MySQL</span>
+                                <span class="badge bg-secondary badge-tech">Stripe</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-4 animated">
+                <!-- Project 2 -->
+                <div class="col-md-4 mb-4 project-item animated" data-category="web">
                     <div class="card project-card shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4" class="card-img-top" alt="Task Management App">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Task Management App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Task Management App</h5>
                             <p class="card-text">A collaborative task management application with real-time updates, user roles, and progress tracking.</p>
-                            <div class="mb-3">
-                                <span class="badge badge-tech">Vue.js</span>
-                                <span class="badge badge-tech">Node.js</span>
-                                <span class="badge badge-tech">Socket.io</span>
-                                <span class="badge badge-tech">MongoDB</span>
-                            </div>
-                            <div class="d-flex gap-2">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
-                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-secondary badge-tech">Vue.js</span>
+                                <span class="badge bg-secondary badge-tech">Node.js</span>
+                                <span class="badge bg-secondary badge-tech">Socket.io</span>
+                                <span class="badge bg-secondary badge-tech">MongoDB</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-4 animated">
+                <!-- Project 3 -->
+                <div class="col-md-4 mb-4 project-item animated" data-category="web ecommerce">
                     <div class="card project-card shadow-sm h-100">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa" class="card-img-top" alt="Real Estate Portal">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Real Estate Portal">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Real Estate Portal</h5>
                             <p class="card-text">A comprehensive real estate listing platform with property search, filtering, and agent management.</p>
-                            <div class="mb-3">
-                                <span class="badge badge-tech">PHP</span>
-                                <span class="badge badge-tech">Laravel</span>
-                                <span class="badge badge-tech">PostgreSQL</span>
-                                <span class="badge badge-tech">Google Maps API</span>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-secondary badge-tech">PHP</span>
+                                <span class="badge bg-secondary badge-tech">Laravel</span>
+                                <span class="badge bg-secondary badge-tech">PostgreSQL</span>
+                                <span class="badge bg-secondary badge-tech">Google Maps API</span>
                             </div>
-                            <div class="d-flex gap-2">
-                                <a href="#" class="btn btn-sm btn-outline-primary">Live Demo</a>
-                                <a href="#" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-md-4 mb-4 project-item animated" data-category="api">
+                    <div class="card project-card shadow-sm h-100">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="RESTful API Service">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">RESTful API Service</h5>
+                            <p class="card-text">A secure and scalable API service with comprehensive documentation, authentication, and rate limiting.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-secondary badge-tech">Node.js</span>
+                                <span class="badge bg-secondary badge-tech">Express</span>
+                                <span class="badge bg-secondary badge-tech">JWT</span>
+                                <span class="badge bg-secondary badge-tech">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-md-4 mb-4 project-item animated" data-category="web">
+                    <div class="card project-card shadow-sm h-100">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Admin Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Admin Dashboard</h5>
+                            <p class="card-text">A feature-rich admin dashboard with analytics, user management, and customizable reports and visualizations.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-secondary badge-tech">React.js</span>
+                                <span class="badge bg-secondary badge-tech">Redux</span>
+                                <span class="badge bg-secondary badge-tech">Chart.js</span>
+                                <span class="badge bg-secondary badge-tech">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="col-md-4 mb-4 project-item animated" data-category="ecommerce api">
+                    <div class="card project-card shadow-sm h-100">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300&q=80" class="card-img-top" alt="Payment Gateway Integration">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" title="View Demo"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Payment Gateway Integration</h5>
+                            <p class="card-text">A secure multi-payment gateway system with Stripe, PayPal and other popular services for e-commerce platforms.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-secondary badge-tech">PHP</span>
+                                <span class="badge bg-secondary badge-tech">Laravel</span>
+                                <span class="badge bg-secondary badge-tech">Stripe API</span>
+                                <span class="badge bg-secondary badge-tech">PayPal API</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <a href="#contact" class="btn btn-primary">Interested in working together?</a>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
     
     <!-- Experience Section -->
     <section id="experience" class="section-padding">
@@ -420,6 +539,7 @@
             </div>
         </div>
     </section>
+    
     
     <!-- Services Section -->
     <section id="services" class="section-padding bg-light">
